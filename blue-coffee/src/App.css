@@ -1,0 +1,30 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+.App {
+    width: 400px;
+    align-items: center;
+    display: flex;
+}
+
+img {
+    position: relative;
+    width: 600px;
+    height: auto;
+  }
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
+.navbar-items{
+    padding: 15px;
+    cursor: pointer;
+    color: #18A0FB;
+    font-weight: bold;
+    align-items: center;
+
+}
