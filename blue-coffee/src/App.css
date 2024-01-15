@@ -16,15 +16,8 @@ img {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     flex-direction: row;
-}
-.navbar-items{
-    padding: 15px;
     cursor: pointer;
     color: #18A0FB;
     font-weight: bold;
-    align-items: center;
-
 }
