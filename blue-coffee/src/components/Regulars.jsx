@@ -19,12 +19,13 @@ function Regulars() {
     <Card className="bg-dark text-white">
       <Card.Img src={regulars} alt="regulars" />
       <Card.ImgOverlay>
+        <h1 className='header-re'>JOIN THE WAITLIST!</h1>
         <div className='input-btn'>
       <InputGroup className="mb-3">
         <Form.Control
           placeholder="Type your email"
           aria-label="email"
-          aria-describedby="basic-addon2"
+          aria-describedby="basic-addon1"
         />
        <Button  className='btn-2'variant="outline-secondary" id="button-addon1" size='lg' onClick={handleShow}>
           JOIN!

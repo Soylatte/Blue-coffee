@@ -1,17 +1,13 @@
 .input-btn{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    border-radius: 4px;
-    height: 4px;
-    justify-content: space-between;
     padding: 200px;
 }
+.header-re{
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+}
 .btn-2{
-  padding: 0px 20px;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
-
 }
 
 @media (min-width: 768px) {
