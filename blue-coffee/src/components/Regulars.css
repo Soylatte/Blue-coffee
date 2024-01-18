@@ -1,58 +1,17 @@
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-margin: 0;
-
-}
-.input-container{
-    display: flex;
-    flex-direction: row;
-    left: 50%;
-    margin: 400px;
-    width: 60%;
-    padding: 8px;
-    max-width: 560px;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    line-height: 0;
-}
 .input-btn{
     display: flex;
     text-align: center;
     align-items: center;
     border-radius: 4px;
     height: 4px;
-
     justify-content: space-between;
     padding: 200px;
-
 }
-.btn-wait {
-  flex-direction: column;
-  background-color: #fee6e3;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
-  display: flex;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 8px 15px;
-  width: 120px;
-  position: relative;
-  margin-top: 10px;
-  align-items: center;
-  margin: 0 auto;
-  margin-left: 10px;
+.btn-2{
+  padding: 0px 20px;
+  font-size: 14px;
+  font-weight: bold;
+
 }
 
 @media (min-width: 768px) {

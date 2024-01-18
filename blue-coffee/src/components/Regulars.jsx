@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import InputGroup from 'react-bootstrap/InputGroup';
 import regulars from '../images/regulars.jpg'
+import Form from 'react-bootstrap/Form';
 import './Regulars.css'
 
 
@@ -18,11 +20,18 @@ function Regulars() {
       <Card.Img src={regulars} alt="regulars" />
       <Card.ImgOverlay>
         <div className='input-btn'>
-      <input className='input-container' type="text" placeholder="Type your email"></input>
-      <button className='btn-wait' onClick={handleShow}>
-        SUBMIT!
-      </button>
+      <InputGroup className="mb-3">
+        <Form.Control
+          placeholder="Type your email"
+          aria-label="email"
+          aria-describedby="basic-addon2"
+        />
+       <Button  className='btn-2'variant="outline-secondary" id="button-addon1" size='lg' onClick={handleShow}>
+          JOIN!
+        </Button>
+      </InputGroup>
       </div>
+
       <Modal
         show={show}
         onHide={handleClose}
