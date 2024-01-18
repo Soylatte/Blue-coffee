@@ -31,7 +31,7 @@ function Menu() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Grond in store available</small>
+          <small className="text-muted">Ground in store available</small>
         </Card.Footer>
       </Card>
       <Card>

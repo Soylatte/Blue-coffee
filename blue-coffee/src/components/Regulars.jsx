@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import './Regulars.css'
+import { Button } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
 import regulars from '../images/regulars.jpg'
+import './Regulars.css'
 
-function Example() {
+
+function Regulars() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,12 +14,15 @@ function Example() {
 
   return (
     <>
-    <img src={regulars} />
-    <Form.Control size="lg" type="text" placeholder="Type your email" />
-      <Button className='btn-wait' variant="primary" onClick={handleShow}>
-        JOIN THE WAITLIST
-      </Button>
-
+    <Card className="bg-dark text-white">
+      <Card.Img src={regulars} alt="regulars" />
+      <Card.ImgOverlay>
+        <div className='input-btn'>
+      <input className='input-container' type="text" placeholder="Type your email"></input>
+      <button className='btn-wait' onClick={handleShow}>
+        SUBMIT!
+      </button>
+      </div>
       <Modal
         show={show}
         onHide={handleClose}
@@ -38,8 +42,10 @@ function Example() {
 
         </Modal.Footer>
       </Modal>
+      </Card.ImgOverlay>
+    </Card>
     </>
   );
 }
 
-export default Example;
+export default Regulars;
